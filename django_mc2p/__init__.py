@@ -1,7 +1,5 @@
 from mc2p import MC2PClient as MC2PClientPython
 
-from .models import MC2PConfig
-
 
 __title__ = 'MyChoice2Pay Django'
 __version__ = '0.0.1'
@@ -18,6 +16,8 @@ HTTP_HEADER_ENCODING = 'iso-8859-1'
 # Default datetime input and output formats
 ISO_8601 = 'iso-8601'
 
+default_app_config = 'django_mc2p.apps.DjangoMC2PConfig'
+
 
 class MC2PClient(MC2PClientPython):
     """
@@ -27,6 +27,8 @@ class MC2PClient(MC2PClientPython):
         """
         Initializes a MC2PClient getting key and secret key from DB
         """
+        from .models import MC2PConfig
+
         try:
             mc2p_config = MC2PConfig.objects.get()
             key = mc2p_config.key
