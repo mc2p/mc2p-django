@@ -1,5 +1,7 @@
 from django.views.generic import View
 from django.http import HttpResponse
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 
 import json
 
@@ -13,6 +15,7 @@ class MC2PNotifyView(View):
     """
     http_method_names = ['post']
 
+    @method_decorator(csrf_exempt)
     def post(self, request, *args, **kwargs):
         json_body = json.loads(request.body)
 
