@@ -16,6 +16,9 @@ class MC2PNotifyView(View):
     http_method_names = ['post']
 
     @method_decorator(csrf_exempt)
+    def dispatch(self, request, *args, **kwargs):
+        return super(MC2PNotifyView, self).dispatch(request, *args, **kwargs)
+        
     def post(self, request, *args, **kwargs):
         json_body = json.loads(request.body)
 
