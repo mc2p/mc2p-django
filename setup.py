@@ -23,16 +23,17 @@ setup(
     version=version,
     url='https://github.com/mc2p/mc2p-django',
     license='BSD',
-    description='MyChoice2Pay Django',
+    description='MyChoice2Pay Django Bindings',
     long_description=README,
     author='MyChoice2Pay',
     author_email='support@mychoice2pay.com',
+    download_url='https://github.com/mc2p/mc2p-django/archive/v0.0.1.tar.gz',
     packages=find_packages(),
     install_requires=[
         'django',
         'mc2p-python'
     ],
-    zip_safe=False,
+    keywords=['mychoice2pay', 'payments'],
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
