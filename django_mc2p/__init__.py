@@ -2,7 +2,7 @@ from mc2p import MC2PClient as MC2PClientPython
 
 
 __title__ = 'MyChoice2Pay Django'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 __author__ = 'MyChoice2Pay'
 __license__ = 'BSD 2-Clause'
 __copyright__ = 'Copyright 2017 MyChoice2Pay'
