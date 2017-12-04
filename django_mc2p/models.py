@@ -6,7 +6,7 @@ class MC2PConfig(models.Model):
     """
     MyChoice2Pay Configuration
     """
-    key = models.CharField(max_length=12, verbose_name=_('Key'))
+    key = models.CharField(max_length=32, verbose_name=_('Key'))
     secret_key = models.CharField(max_length=32, verbose_name=_('Secret Key'))
 
     class Meta:
