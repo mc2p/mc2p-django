@@ -20,7 +20,8 @@ class MC2PNotifyView(View):
         return super(MC2PNotifyView, self).dispatch(request, *args, **kwargs)
         
     def post(self, request, *args, **kwargs):
-        json_body = json.loads(request.body)
+        body_content = request.body.decode('utf-8')
+        json_body = json.loads(body_content)
 
         mc2p = MC2PClient()
         notification_data = mc2p.NotificationData(json_body)
