@@ -25,6 +25,7 @@ setup(
     license='BSD',
     description='MyChoice2Pay Django Bindings',
     long_description=README,
+    long_description_content_type='text/markdown',
     author='MyChoice2Pay',
     author_email='support@mychoice2pay.com',
     download_url='https://github.com/mc2p/mc2p-django/archive/v0.1.5.tar.gz',
