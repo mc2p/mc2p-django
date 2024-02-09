@@ -28,7 +28,7 @@ setup(
     long_description_content_type='text/markdown',
     author='MyChoice2Pay',
     author_email='support@mychoice2pay.com',
-    download_url='https://github.com/mc2p/mc2p-django/archive/v0.1.5.tar.gz',
+    download_url='https://github.com/mc2p/mc2p-django/archive/v0.1.6.tar.gz',
     packages=find_packages(),
     install_requires=[
         'django',

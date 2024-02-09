@@ -1,8 +1,8 @@
-from django.conf.urls import url
+from django.urls import re_path
 
 from . import views
 
 
 urlpatterns = [
-    url(r'^notify/$', views.MC2PNotifyView.as_view(), name='mc2p-notify'),
+    re_path(r'^notify/$', views.MC2PNotifyView.as_view(), name='mc2p-notify'),
 ]
